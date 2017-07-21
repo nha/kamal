@@ -7,7 +7,8 @@
                  [org.clojure/data.xml "0.0.8"] ; parse xml lazily
                  [org.clojure/data.int-map "0.2.4"] ; fast integers-map
                  [metosin/compojure-api "2.0.0-alpha5"]
-                 [metosin/spec-tools "0.3.0"]]
+                 [metosin/spec-tools "0.3.0"]
+                 [org.clojure/data.csv "0.1.4"]]
   ;; Sets the values of global vars within Clojure.
   :global-vars {*warn-on-reflection* true
                 *print-length* 50}
