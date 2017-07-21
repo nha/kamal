@@ -46,3 +46,10 @@ crashlytics-build.properties
 fabric.properties
 /service.routing.iml
 /resources/osm/saarland.osm
+/resources/gtfs/de/agency.txt
+/resources/gtfs/de/routes.txt
+/resources/gtfs/de/trips.txt
+/resources/gtfs/de/stop_times.txt
+/resources/gtfs/de/stops.txt
+/resources/gtfs/de/feed_info.txt
+/resources/gtfs/de/calendar_dates.txt
