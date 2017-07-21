@@ -41,3 +41,14 @@
   (reduce + (map (fn [[lon lat] [lon2 lat2]] (haversine lon lat lon2 lat2))
                  coordinates
                  (rest coordinates))))
+
+;according to the rfc7946 the values of
+;a bbox array are [west, south, east, north], not [minx, miny, maxx, maxy]
+(defn bbox-contains?
+  "checks if a pair of coordinates is inside a bounding box"
+  ([[min-lon min-lat max-lon max-lat] lon lat]
+   (and (<= min-lon lon max-lon)
+        (<= min-lat lat max-lat)))
+  ([bbox [lon lat]]
+   (bbox-contains? bbox lon lat)))
+
